@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080608">
+  <meta name="description" content="AUC is one brand with two sides: AUC Pleasure Paradise and AUC Empire. Shop intimate wellness, body care, fashion, watches, jewelry and hair essentials.">
+  <title>AUC | Pleasure Paradise & Empire</title>
+  <style>
+    :root{--black:#080608;--gold:#f6c84b;--pink:#f52c9b;--cream:#fff7ef;--muted:#d7cbd4}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--black);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(8,6,8,.94);backdrop-filter:blur(10px);border-bottom:1px solid #3a2b25}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+    .brand{font-family:Georgia,serif;font-size:1.65rem;font-weight:bold;letter-spacing:3px;color:var(--gold);text-decoration:none}
+    .brand small{display:block;font:700 .62rem Arial;letter-spacing:4px;text-align:center;color:#fff}
+    nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    nav a{text-decoration:none;font-size:.9rem;color:#f6e9e9}
+    nav a:hover{color:var(--pink)}
+    .hero{padding:56px 0 42px;background:radial-gradient(ellipse at 15% 0%,#5b103d 0,transparent 40%),radial-gradient(ellipse at 95% 25%,#49310b 0,transparent 35%)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:.78rem;color:var(--pink);font-weight:bold}
+    h1{font:clamp(2.6rem,6vw,5rem)/.98 Georgia,serif;margin:15px 0;color:var(--gold)}
+    h1 span{color:#fff}
+    .hero p{color:var(--muted);font-size:1.08rem;max-width:590px}
+    .hero-img{width:100%;max-height:540px;object-fit:cover;border-radius:20px;border:1px solid #654327;box-shadow:0 20px 70px #0009}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;text-decoration:none;font-weight:800;border:1px solid transparent;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    .whatsapp{background:#20c66a;color:#071b0f}
+    .tiktok{background:#fff;color:#111}
+    .outline{border-color:var(--gold);color:var(--gold)}
+    section{padding:58px 0}
+    .section-head{text-align:center;margin:0 auto 30px;max-width:720px}
+    .section-head h2{font:clamp(2rem,4vw,3.3rem)/1.05 Georgia,serif;color:var(--gold);margin:8px 0}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+    .card{background:linear-gradient(145deg,#171116,#0c090c);border:1px solid #49342d;border-radius:20px;overflow:hidden}
+    .card img{width:100%;height:290px;object-fit:cover;display:block}
+    .card-content{padding:24px}
+    .card h3{font:2rem Georgia,serif;margin:0 0 8px}
+    .pink{color:var(--pink)} .gold{color:var(--gold)}
+    .card p{color:var(--muted)}
+    .tag-list{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0}
+    .tag{font-size:.82rem;padding:7px 10px;border:1px solid #51404a;border-radius:999px;color:#f5e9ef}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .gallery img{width:100%;height:100%;min-height:260px;max-height:520px;object-fit:cover;border-radius:16px;border:1px solid #4b382c}
+    .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+    .trust div{border:1px solid #40302a;padding:17px 12px;border-radius:14px;text-align:center;color:#f4df9c;font-weight:bold}
+    .contact{background:linear-gradient(120deg,#210d1b,#171006);border-top:1px solid #5c3e2a;border-bottom:1px solid #5c3e2a}
+    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+    .contact h2{font:clamp(2rem,4vw,3.2rem) Georgia,serif;color:var(--gold);margin:0 0 12px}
+    .contact p{color:var(--muted)}
+    .phone{font-size:1.5rem;font-weight:bold;letter-spacing:1px}
+    footer{padding:24px 0;text-align:center;color:#b9aab5;font-size:.86rem}
+    footer strong{color:var(--gold)}
+    @media(max-width:760px){
+      .nav{align-items:flex-start;flex-direction:column}
+      nav{gap:12px}
+      .hero-grid,.cards,.gallery,.contact-box{grid-template-columns:1fr}
+      .hero{padding-top:35px}
+      .hero-img{max-height:420px}
+      .card img{height:auto;max-height:460px;object-fit:contain;background:#100b10}
+      .trust{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">AUC <small>ONE BRAND · TWO WORLDS</small></a>
+    <nav aria-label="Main navigation">
+      <a href="#brands">Our Brands</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Style · Self-care · Confidence</div>
+        <h1>Welcome to <span>AUC</span></h1>
+        <p>One brand, two distinct experiences. Discover intimate wellness and body-care essentials at <strong>AUC Pleasure Paradise</strong>, then explore fashion and lifestyle finds at <strong>AUC Empire</strong>.</p>
+        <div class="actions">
+          <a class="btn whatsapp" href="https://wa.me/2348138331212?text=Hello%20AUC%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">☏ Chat on WhatsApp</a>
+          <a class="btn tiktok" href="https://www.tiktok.com/@best.aphrodisiac?_r=1&_t=ZS-9AGeFeOi2D6" target="_blank" rel="noopener">♪ Visit TikTok</a>
+          <a class="btn outline" href="#brands">Explore both brands ↓</a>
+        </div>
+      </div>
+      <img class="hero-img" src="images/auc-double-brand-flyer.jpg" alt="AUC Pleasure Paradise and AUC Empire promotional flyer">
+    </div>
+  </section>
+
+  <section id="brands">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Two sides of AUC</div>
+        <h2>Find Your Kind of Fabulous</h2>
+        <p>Choose the collection that suits you. For product availability, prices and delivery details, message us directly.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img src="images/auc-pleasure-paradise.jpg" alt="AUC Pleasure Paradise flyer featuring intimate wellness products, body care and lingerie">
+          <div class="card-content">
+            <div class="eyebrow">Self-care · Intimate wellness</div>
+            <h3 class="pink">AUC Pleasure Paradise</h3>
+            <p>Your pleasure, our priority. Explore intimate wellness essentials and personal-care products in a discreet, judgment-free shopping experience.</p>
+            <div class="tag-list">
+              <span class="tag">Adult wellness</span><span class="tag">Body care</span><span class="tag">Intimate care</span><span class="tag">Lingerie</span><span class="tag">Accessories</span>
+            </div>
+            <a class="btn whatsapp" href="https://wa.me/2348138331212?text=Hello%20AUC%20Pleasure%20Paradise%2C%20please%20send%20me%20your%20product%20list." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/auc-pleasure-paradise-logo.jpg" alt="Gold AUC Pleasure Paradise logo on a black background">
+          <div class="card-content">
+            <div class="eyebrow">Fashion · Accessories · Lifestyle</div>
+            <h3 class="gold">AUC Empire</h3>
+            <p>Style, class and quality. Shop fashion and lifestyle essentials made to help you express your own look.</p>
+            <div class="tag-list">
+              <span class="tag">Clothes</span><span class="tag">Wrist watches</span><span class="tag">Jewelry</span><span class="tag">Hair making</span><span class="tag">Bags & accessories</span>
+            </div>
+            <a class="btn whatsapp" href="https://wa.me/2348138331212?text=Hello%20AUC%20Empire%2C%20please%20send%20me%20your%20fashion%20and%20accessories%20catalogue." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </div>
+        </article>
+      </div>
+      <div class="trust">
+        <div>✦ Quality Products</div><div>✦ Discreet Packaging</div><div>✦ Friendly Service</div><div>✦ Customer Satisfaction</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">A look at AUC</div>
+        <h2>Our Brand Gallery</h2>
+        <p>Explore the AUC look, from bold pink-and-black self-care style to classic black-and-gold elegance.</p>
+      </div>
+      <div class="gallery">
+        <img src="images/auc-double-brand-flyer.jpg" alt="Side-by-side AUC Pleasure Paradise and AUC Empire brand flyers">
+        <img src="images/auc-pleasure-paradise.jpg" alt="AUC Pleasure Paradise product and lingerie display">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-box">
+      <div>
+        <div class="eyebrow">Let's help you find it</div>
+        <h2>Contact AUC</h2>
+        <p>For product enquiries, current prices, orders and delivery information, reach out through WhatsApp or follow our TikTok page.</p>
+        <p class="phone">WhatsApp: 0813 833 1212</p>
+      </div>
+      <div>
+        <div class="actions">
+          <a class="btn whatsapp" href="https://wa.me/2348138331212?text=Hello%20AUC%2C%20I%27d%20like%20to%20make%20an%20order." target="_blank" rel="noopener">☏ WhatsApp AUC</a>
+          <a class="btn tiktok" href="https://www.tiktok.com/@best.aphrodisiac?_r=1&_t=ZS-9AGeFeOi2D6" target="_blank" rel="noopener">♪ TikTok @best.aphrodisiac</a>
+        </div>
+        <p><strong class="gold">AUC Pleasure Paradise:</strong> Tunde Ibikunle Road, Bim Junction, Orita Ilaro, Ogun State.</p>
+        <p><strong class="gold">AUC Empire:</strong> Sango/Ilaro Road, Ogun State.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap"><strong>AUC</strong> · Pleasure Paradise & Empire · One brand, two worlds.<br>© <span id="year">2026</span> AUC. All rights reserved.</div>
+</footer>
+</body>
+</html>
